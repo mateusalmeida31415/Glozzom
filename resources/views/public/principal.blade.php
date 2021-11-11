@@ -55,7 +55,7 @@
     </header>
 
     {{-- Benefits --}}
-    <section id="benefits">
+    <section id="benefits" class="bg-light">
         <benefits-component 
             :benefits="[
                 {

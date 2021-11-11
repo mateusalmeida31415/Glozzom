@@ -1,3 +1,8 @@
+body{
+    background: url(/img/lights.jpg) no-repeat fixed right top, url(/img/media.jpg) no-repeat fixed right top;
+    // background-size: cover;
+}
+
 #slider{
     .carousel-item{
         max-height: 400px;

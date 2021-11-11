@@ -53,6 +53,28 @@
             ]">
         </carousel-component>
     </header>
-    
+
+    {{-- Benefits --}}
+    <section id="benefits">
+        <benefits-component 
+            :benefits="[
+                {
+                    'title': 'Turning Gears',
+                    'text': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.',
+                    'icon': 'fas fa-cog fa-3x'
+                },
+                {
+                    'title': 'Sending Data',
+                    'text': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.',
+                    'icon': 'fas fa-cloud fa-3x'
+                },
+                {
+                    'title': 'Making Money',
+                    'text': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.',
+                    'icon': 'fas fa-cart-plus fa-3x'
+                }
+            ]">
+        </benefits-component>
+    </section>
 @endsection
     

@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3" :id="id">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" :id="id">
         <div class="container">
             <!-- Nome da marca -->
             <a class="navbar-brand" :href="brand[0].link">{{brand[0].name}}</a>

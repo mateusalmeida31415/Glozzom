@@ -21,9 +21,12 @@ window.Vue = require('vue').default;
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+// Barra de navegação
 Vue.component('navbar-component', require('./components/Navbar.vue').default);
-
+// Carousel
 Vue.component('carousel-component', require('./components/Carousel.vue').default);
+// Benefits
+Vue.component('benefits-component', require('./components/Benefits.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -1,11 +1,13 @@
 <template>
-    <div class="container py-5">
-        <div class="row">
-            <div class="col text-center text-white">
-                <!-- Pergunta -->
-                <h2>{{question[0].title}}</h2>
-                <!-- Texto explicativo -->
-                <p class="mb-0">{{question[0].text}}</p>
+    <div class="overlay py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <!-- Pergunta -->
+                    <h2>{{question[0].title}}</h2>
+                    <!-- Texto explicativo -->
+                    <p class="lead mb-0">{{question[0].text}}</p>
+                </div>
             </div>
         </div>
     </div>

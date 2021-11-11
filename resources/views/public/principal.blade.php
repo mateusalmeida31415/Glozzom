@@ -76,5 +76,16 @@
             ]">
         </benefits-component>
     </section>
+
+    {{-- Question Section --}}
+    <section id="question">
+        <question-component
+        :question="[
+            {
+                'title': 'Are You Ready To Get Started?', 
+                'text': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est eaque magni sit dolores. Nisi, dolor nam modi perspiciatis consequatur soluta.'}
+        ]">
+        </question-component>
+    </section>
 @endsection
     

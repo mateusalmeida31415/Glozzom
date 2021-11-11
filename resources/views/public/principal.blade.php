@@ -54,7 +54,7 @@
         </carousel-component>
     </header>
 
-    {{-- Benefits --}}
+    {{-- Benefits Section--}}
     <section id="benefits" class="bg-light">
         <benefits-component 
             :benefits="[
@@ -86,6 +86,22 @@
                 'text': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est eaque magni sit dolores. Nisi, dolor nam modi perspiciatis consequatur soluta.'}
         ]">
         </question-component>
+    </section>
+
+    {{-- Info Section --}}
+    <section id="info" class="bg-light py-4">
+        <info-component 
+            :info="[
+                {
+                    'title': 'Lorem Ipsum',
+                    'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt iusto corrupti illum cum laudantium ex sequi amet.',
+                    'btnText': 'Learn More',
+                    'link': '#',
+                    'image': 'img/laptop.png',
+                    'desc': 'Notebook'
+                }
+            ]">
+        </info-component>
     </section>
 @endsection
     

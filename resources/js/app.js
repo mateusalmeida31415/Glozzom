@@ -23,6 +23,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 Vue.component('navbar-component', require('./components/Navbar.vue').default);
 
+Vue.component('carousel-component', require('./components/Carousel.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

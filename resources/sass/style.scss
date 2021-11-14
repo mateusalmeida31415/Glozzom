@@ -1,5 +1,5 @@
 body{
-    background: url(/img/lights.jpg) no-repeat fixed left top, url(/img/media.jpg) no-repeat fixed right top;
+    height: 100vh;
     // background-size: cover;
 }
 
@@ -10,8 +10,24 @@ body{
 }
 
 #question{
-    background: transparent;
-    position: relative;
+    background-image: url(/img/lights.jpg);
+    background-size: cover;
+    background-position: left top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .overlay{
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .7);
+    }
+}
+
+#info-video{
+    background-image: url(/img/media.jpg);
+    background-size: cover;
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    // background: transparent;
     .overlay{
         height: 100%;
         background-color: rgba($color: #000000, $alpha: .7);

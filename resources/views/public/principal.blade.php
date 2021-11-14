@@ -123,5 +123,52 @@
 
         </model-component>
     </section>
+
+    {{-- Galeria de fotos --}}
+    <section id="photo-gallery" class="py-5">
+        <gallery-component
+        :gallery="[
+            {
+                'title': 'Photo Gallery',
+                'subtitle': 'Check out our photos',
+                'images': [
+                    [
+                        {
+                            'src': 'https://source.unsplash.com/random/560x560',
+                            'alt': 'Descrição imagem',
+                            'link': '#'
+                        },
+                        {
+                            'src': 'https://source.unsplash.com/random/561x561',
+                            'alt': 'Descrição imagem',
+                            'link': '#'
+                        },
+                        {
+                            'src': 'https://source.unsplash.com/random/562x562',
+                            'alt': 'Descrição imagem',
+                            'link': '#'
+                        }
+                    ],
+                    [
+                        {
+                            'src': 'https://source.unsplash.com/random/563x563',
+                            'alt': 'Descrição imagem',
+                            'link': '#'
+                        },
+                        {
+                            'src': 'https://source.unsplash.com/random/564x564',
+                            'alt': 'Descrição imagem',
+                            'link': '#'
+                        },
+                        {
+                            'src': 'https://source.unsplash.com/random/565x565',
+                            'alt': 'Descrição imagem',
+                            'link': '#'
+                        }
+                    ]
+                ]  
+            }
+        ]"></gallery-component>
+    </section>
 @endsection
     

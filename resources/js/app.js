@@ -31,7 +31,8 @@ Vue.component('benefits-component', require('./components/Benefits.vue').default
 Vue.component('question-component', require('./components/Question.vue').default);
 //Info
 Vue.component('info-component', require('./components/Info.vue').default);
-
+// Model
+Vue.component('model-component', require('./components/Model.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

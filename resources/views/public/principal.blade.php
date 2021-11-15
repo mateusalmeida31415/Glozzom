@@ -78,7 +78,7 @@
     </section>
 
     {{-- Question Section --}}
-    <section id="question">
+    <section id="question" class="">
         <question-component
         :question="[
             {

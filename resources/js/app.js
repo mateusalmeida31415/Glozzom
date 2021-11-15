@@ -37,6 +37,16 @@ Vue.component('model-component', require('./components/Model.vue').default);
 Vue.component('gallery-component', require('./components/Gallery.vue').default);
 //Newsletter
 Vue.component('newsletter-component', require('./components/Newsletter.vue').default);
+//Footer
+Vue.component('footer-component', require('./components/Footer.vue').default);
+
+//Filtros
+// Retorna o ano atual
+Vue.filter('getYear', function(){
+    let date = new Date();
+
+    return date.getFullYear();
+});
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

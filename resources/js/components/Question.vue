@@ -1,8 +1,8 @@
 <template>
-    <div class="overlay py-5">
-        <div class="container">
+    <div class="overlay">
+        <div class="container py-5">
             <div class="row">
-                <div class="col-12 text-center text-white">
+                <div class="col text-center text-white">
                     <!-- Icon -->
                     <a v-if="question[0].icon" class="text-white" href="" data-toggle="modal" :data-target="question[0].target">
                         <i :class="question[0].icon + ' pb-2'"></i>

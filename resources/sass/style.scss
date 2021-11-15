@@ -12,16 +12,19 @@ body{
     }  
 }
 
+.overlay{
+    // position: absolute;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .7);
+}
+
 #question{
     background-image: url(/img/lights.jpg);
     background-size: cover;
     background-position: left top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    .overlay{
-        height: 100%;
-        background-color: rgba($color: #000000, $alpha: .7);
-    }
+    
 }
 
 #info-video{
@@ -30,11 +33,6 @@ body{
     background-position: right top;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    // background: transparent;
-    .overlay{
-        height: 100%;
-        background-color: rgba($color: #000000, $alpha: .7);
-    }
 }
 
 #footer{

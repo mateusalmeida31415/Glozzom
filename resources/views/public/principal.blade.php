@@ -193,5 +193,8 @@
             }]">
         </newsletter-component>
     </section>
+
+    {{-- Footer --}}
+    <footer-component id="footer"></footer-component>
 @endsection
     

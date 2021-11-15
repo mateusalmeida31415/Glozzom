@@ -118,9 +118,9 @@
         </question-component>
 
         <model-component
-        id="model-video">
-            <iframe class="embed-responsive-item" width="100%" height="350" src="https://www.youtube.com/embed/CKBiquAq3eY?controls=0" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        id="model-video"
+        link="https://www.youtube.com/embed/CKBiquAq3eY?controls=1">
+            
         </model-component>
     </section>
 

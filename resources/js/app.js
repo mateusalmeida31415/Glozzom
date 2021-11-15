@@ -35,6 +35,8 @@ Vue.component('info-component', require('./components/Info.vue').default);
 Vue.component('model-component', require('./components/Model.vue').default);
 // Gallery
 Vue.component('gallery-component', require('./components/Gallery.vue').default);
+//Newsletter
+Vue.component('newsletter-component', require('./components/Newsletter.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

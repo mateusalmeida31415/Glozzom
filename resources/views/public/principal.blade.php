@@ -170,5 +170,28 @@
             }
         ]"></gallery-component>
     </section>
+
+    {{-- Newsletter --}}
+    <section id="newslatter" class="py-5 bg-dark text-white">
+        <newsletter-component
+        :newsletter="
+            [{
+                'title': 'Sign Up For Our Newsletter',
+                'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores consectetur, quae ducimus voluptates vero repellendus architecto maiores recusandae mollitia?',
+                'inputs': [
+                    {
+                        'type': 'text',
+                        'placeholder': 'Enter Name',
+                        'value': ''
+                    }, 
+                    {
+                        'type': 'email',
+                        'placeholder': 'Enter E-mail',
+                        'value': ''
+                    }
+                ]
+            }]">
+        </newsletter-component>
+    </section>
 @endsection
     

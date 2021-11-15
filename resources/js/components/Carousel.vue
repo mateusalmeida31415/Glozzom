@@ -9,16 +9,19 @@
         </ol>
         <div class="carousel-inner">
             <template v-for="(item, index) in carousel">
-                <div :class="'carousel-item mb-5 ' + ((index == 0) ? 'active' : '')">
+                <div :class="'carousel-item ' + ((index == 0) ? 'active' : '')" style="max-height: 400px;">
                     <!-- Imagem de fundo -->
-                    <img class="d-block img-fluid" :src="item.image" :alt="item.desc">
-                    <div :class="'carousel-caption d-none d-sm-block ' + (item.align ? item.align : 'text-center') ">
-                        <!-- Título -->
-                        <h1 class="display-4">{{item.title}}</h1>
-                        <!-- Texto -->
-                        <p class="lead">{{item.text}}</p>
-                        <!-- Botão -->
-                        <a :href="item.link" :class="'btn btn-lg ' + item.btnColor">{{item.btnText}}</a>
+                    <img class="img-fluid" :src="item.image" :alt="item.desc">
+
+                    <div class="container">
+                        <div :class="'carousel-caption d-none d-sm-block ' + (item.align ? item.align : 'text-center') ">
+                            <!-- Título -->
+                            <h1 class="display-4">{{item.title}}</h1>
+                            <!-- Texto -->
+                            <p class="lead">{{item.text}}</p>
+                            <!-- Botão -->
+                            <a :href="item.link" :class="'btn btn-lg mb-5 ' + item.btnColor">{{item.btnText}}</a>
+                        </div>
                     </div>
                 </div>
             </template>

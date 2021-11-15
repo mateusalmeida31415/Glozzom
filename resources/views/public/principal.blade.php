@@ -8,7 +8,7 @@
     id="main-nav"
     :brand="[{'name': 'Glozzom', 'link': '#'}]"
     :itens="[
-        {'text': 'home', 'link': '#', 'ref': ''},
+        {'text': 'home', 'link': '{{route('home')}}', 'ref': '', 'path': '/'},
         {'text': 'about us', 'link': '#', 'ref': ''},
         {'text': 'services', 'link': '#', 'ref': ''},
         {'text': 'blog', 'link': '#', 'ref': ''},

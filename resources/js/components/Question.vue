@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col text-center text-white">
                     <!-- Icon -->
-                    <a v-if="question[0].icon" class="text-white" href="" data-toggle="modal" :data-target="question[0].target">
+                    <a v-if="question[0].icon" class="text-white" href="#" data-toggle="modal" :data-target="question[0].target">
                         <i :class="question[0].icon + ' pb-2'"></i>
                     </a>
                     <!-- Pergunta -->

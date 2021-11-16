@@ -9,7 +9,7 @@
     :brand="[{'name': 'Glozzom', 'link': '#'}]"
     :itens="[
         {'text': 'home', 'link': '{{route('home')}}', 'ref': '', 'path': '/'},
-        {'text': 'about us', 'link': '#', 'ref': ''},
+        {'text': 'about us', 'link': '{{route('about')}}', 'ref': '/about-us'},
         {'text': 'services', 'link': '#', 'ref': ''},
         {'text': 'blog', 'link': '#', 'ref': ''},
         {'text': 'contact', 'link': '#', 'ref': ''}

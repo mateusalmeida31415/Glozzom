@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 
 class PrincipalController extends Controller
 {
-    public function home(Request $request){
-        return view('public.principal', ['path' => $request->path()]);
+    public function home(){
+        return view('public.principal');
+    }
+
+    public function about(){
+        return view('public.about');
     }
 }

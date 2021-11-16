@@ -16,7 +16,6 @@
                             <a class="nav-link text-uppercase" :href="(item.link != '') ? item.link : item.ref">{{item.text}}</a>
                         </li>
                     </template>
-                    
                 </ul>
             </div>
         </div>

@@ -4,7 +4,9 @@ body{
 }
 #main-nav{
     .nav-item {
-        padding-left: 1rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+
         // padding-right: .5rem;
         &.active{
             border-left: 3px solid white;

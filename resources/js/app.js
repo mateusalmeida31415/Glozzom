@@ -39,6 +39,8 @@ Vue.component('gallery-component', require('./components/Gallery.vue').default);
 Vue.component('newsletter-component', require('./components/Newsletter.vue').default);
 //Footer
 Vue.component('footer-component', require('./components/Footer.vue').default);
+// Header
+Vue.component('header-component', require('./components/Header.vue').default);
 
 //Filtros
 // Retorna o ano atual

@@ -15,4 +15,13 @@
         {'text': 'contact', 'link': '#', 'ref': ''}
     ]">
     </navbar-component>
+
+    <header-component 
+    :header="{
+        'id': 'header-about-us',
+        'title': 'What We Do',
+        'text': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?'
+    }" >
+    </header-component>
+    
 @endsection

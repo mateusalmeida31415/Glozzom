@@ -11,7 +11,7 @@
                     <!-- Colunas -->
                     <div class="col-md-4">
                         <!-- Imagem -->
-                        <a :href="image.link">
+                        <a :href="image.link" data-toggle="lightbox" data-gallery="img-gallery" data-type="image">
                             <img :src="image.src" :alt="image.alt" class="img-fluid">
                         </a>
                     </div>

@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <!-- Primeira ROW -->
         <div class="row">
             <div class="col col-lg-6">
                 <!-- Título -->
@@ -13,24 +14,24 @@
                 <!-- Imagem -->
                 <img class="img-fluid rounded-circle" :src="itens[0].image.src" :alt="itens[0].image.alt">
             </div>
-
-            <div class="row">
-                <!-- Criação dos card de forma programatica -->
-                <template v-for="(card, index) in itens[0].cards">
-                    <div class="col-md-4">
-                        <div :class="'card p-3 text-center text-white mt-4 ' + (!(index % 2 == 0) ? 'bg-dark' : 'bg-danger') ">
-                            <div class="card-body">
-                                <!-- Card Icon  -->
-                                <span><i :class="card.icon"></i></span>
-                                <!-- Card título -->
-                                <h4 class="card-title">{{card.title}}</h4>
-                                <!-- Card conteúdo -->
-                                <p class="card-text">{{card.text}}</p>
-                            </div>
+        </div>
+        <!-- Segunda ROW -->
+        <div class="row">
+            <!-- Criação dos card de forma programatica -->
+            <template v-for="(card, index) in itens[0].cards">
+                <div class="col-md-4">
+                    <div :class="'card p-3 text-center text-white mt-4 ' + (!(index % 2 == 0) ? 'bg-dark' : 'bg-danger') ">
+                        <div class="card-body">
+                            <!-- Card Icon  -->
+                            <span><i :class="card.icon"></i></span>
+                            <!-- Card título -->
+                            <h4 class="card-title">{{card.title}}</h4>
+                            <!-- Card conteúdo -->
+                            <p class="card-text">{{card.text}}</p>
                         </div>
                     </div>
-                </template>'
-            </div>
+                </div>
+            </template>
         </div>
     </div>
 </template>

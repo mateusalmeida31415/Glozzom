@@ -9,7 +9,7 @@
                     <p class="lead">{{item.p}}</p>
                 </template>
             </div>
-            <div class="col d-sm-none d-md-block col-lg-6">
+            <div class="col d-none d-md-block col-lg-6">
                 <!-- Imagem -->
                 <img class="img-fluid rounded-circle" :src="itens[0].image.src" :alt="itens[0].image.alt">
             </div>

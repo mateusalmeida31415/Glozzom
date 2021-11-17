@@ -77,7 +77,8 @@
         }]">
         </what-we-do-component>
     </section>
-
+    
+    {{-- Feedback Section --}}
     <section id="feedback" class="py-3 bg-dark text-white">
         <feedback-component 
             :feedback="[
@@ -104,5 +105,7 @@
             ]">
         </feedback-component>
     </section>
-    
+
+    {{-- Footer --}}
+    <footer-component id="footer"></footer-component>
 @endsection

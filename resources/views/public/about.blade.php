@@ -5,24 +5,24 @@
 @section('content')
     {{-- Navbar --}}
     <navbar-component 
-    id="main-nav"
-    :brand="[{'name': 'Glozzom', 'link': '#'}]"
-    :itens="[
-        {'text': 'home', 'link': '{{route('home')}}', 'ref': '', 'path': '/'},
-        {'text': 'about us', 'link': '{{route('about')}}', 'ref': '', 'path': '/about-us'},
-        {'text': 'services', 'link': '#', 'ref': ''},
-        {'text': 'blog', 'link': '#', 'ref': ''},
-        {'text': 'contact', 'link': '#', 'ref': ''}
-    ]">
+        id="main-nav"
+        :brand="[{'name': 'Glozzom', 'link': '#'}]"
+        :itens="[
+            {'text': 'home', 'link': '{{route('home')}}', 'ref': '', 'path': '/'},
+            {'text': 'about us', 'link': '{{route('about')}}', 'ref': '', 'path': '/about-us'},
+            {'text': 'services', 'link': '#', 'ref': ''},
+            {'text': 'blog', 'link': '#', 'ref': ''},
+            {'text': 'contact', 'link': '#', 'ref': ''}
+        ]">
     </navbar-component>
 
     {{-- Header --}}
     <header-component 
-    :header="{
-        'id': 'header-about-us',
-        'title': 'What We Do',
-        'text': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?'
-    }" >
+        :header="{
+            'id': 'header-about-us',
+            'title': 'What We Do',
+            'text': 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?'
+        }">
     </header-component>
 
     {{-- What we do Section --}}
@@ -76,6 +76,33 @@
             ]
         }]">
         </what-we-do-component>
+    </section>
+
+    <section id="feedback" class="py-3 bg-dark text-white">
+        <feedback-component 
+            :feedback="[
+                {
+                    'title': 'Testimonials',
+                    'feedback': [
+                        {
+                            'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, suscipit.',
+                            'source': 'Company 1',
+                            'name': 'Sam Smith From '
+                        },
+                        {
+                            'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, suscipit.',
+                            'source': 'Company 2',
+                            'name': 'John Doe From '  
+                        },
+                        {
+                            'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, suscipit.',
+                            'source': 'Company 3',
+                            'name': 'Meghan Willians From ' 
+                        }
+                    ]
+                }
+            ]">
+        </feedback-component>
     </section>
     
 @endsection

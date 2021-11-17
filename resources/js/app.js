@@ -41,6 +41,9 @@ Vue.component('newsletter-component', require('./components/Newsletter.vue').def
 Vue.component('footer-component', require('./components/Footer.vue').default);
 // Header
 Vue.component('header-component', require('./components/Header.vue').default);
+//What we do
+Vue.component('what-we-do-component', require('./components/WhatWeDo.vue').default);
+
 
 //Filtros
 // Retorna o ano atual

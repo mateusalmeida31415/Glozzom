@@ -53,3 +53,9 @@ body{
     @extend .header;
     background-image: url(/img/image1.jpg);
 }
+
+#what-we-do{
+    img{
+        margin-top: -50px;
+    }
+}

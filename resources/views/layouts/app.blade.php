@@ -27,7 +27,9 @@
 </head>
 <body>
     <div id="app">
+        @include('components.navbar')
         @yield('content')
+        @include('components.footer')
     </div>
     
     {{-- VUE.JS --}}

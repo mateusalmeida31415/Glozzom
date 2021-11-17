@@ -2,20 +2,7 @@
 
 @section('pagina', 'Home')
 
-@section('content')
-    {{-- Navbar --}}
-    <navbar-component 
-    id="main-nav"
-    :brand="[{'name': 'Glozzom', 'link': '#'}]"
-    :itens="[
-        {'text': 'home', 'link': '{{route('home')}}', 'ref': '', 'path': '/'},
-        {'text': 'about us', 'link': '{{route('about')}}', 'ref': '/about-us'},
-        {'text': 'services', 'link': '#', 'ref': ''},
-        {'text': 'blog', 'link': '#', 'ref': ''},
-        {'text': 'contact', 'link': '#', 'ref': ''}
-    ]">
-    </navbar-component>
-    
+@section('content')    
     {{-- Showcase --}}
     <header id="showcase">
         <carousel-component
@@ -193,8 +180,5 @@
             }]">
         </newsletter-component>
     </section>
-
-    {{-- Footer --}}
-    <footer-component id="footer"></footer-component>
 @endsection
     

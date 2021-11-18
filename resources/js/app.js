@@ -53,6 +53,8 @@ Vue.component('frequently-component', require('./components/Services/Frequently.
 Vue.component('blog-component', require('./components/blog/Blog.vue').default);
 //Pagination
 Vue.component('pagination-component', require('./components/blog/Pagination.vue').default);
+//Contact
+Vue.component('contact-component', require('./components/contact/Contact.vue').default);
 
 
 //Filtros

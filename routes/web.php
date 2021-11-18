@@ -19,3 +19,5 @@ Route::get('/', [App\Http\Controllers\PrincipalController::class, 'home'])->name
 Route::get('/about-us', [App\Http\Controllers\PrincipalController::class, 'about'])->name('about');
 //Services
 Route::get('/services', [App\Http\Controllers\PrincipalController::class, 'services'])->name('services');
+//Blog
+Route::get('/blog', [App\Http\Controllers\PrincipalController::class, 'blog'])->name('blog');

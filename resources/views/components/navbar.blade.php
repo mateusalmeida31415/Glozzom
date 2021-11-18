@@ -23,8 +23,9 @@ id="main-nav"
     },
     {
         'text': 'blog', 
-        'link': '#', 
-        'ref': ''
+        'link': '{{route('blog')}}', 
+        'ref': '',
+        'path': '/blog'
     },
     {
         'text': 

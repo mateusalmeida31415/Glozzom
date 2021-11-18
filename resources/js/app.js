@@ -49,7 +49,10 @@ Vue.component('feedback-component', require('./components/Feedback.vue').default
 Vue.component('plans-component', require('./components/Services/Plans.vue').default);
 //Frequently
 Vue.component('frequently-component', require('./components/Services/Frequently.vue').default);
-
+//Blog
+Vue.component('blog-component', require('./components/blog/Blog.vue').default);
+//Pagination
+Vue.component('pagination-component', require('./components/blog/Pagination.vue').default);
 
 
 //Filtros

@@ -45,6 +45,11 @@ Vue.component('header-component', require('./components/Header.vue').default);
 Vue.component('what-we-do-component', require('./components/WhatWeDo.vue').default);
 // Feedback
 Vue.component('feedback-component', require('./components/Feedback.vue').default);
+// Plans
+Vue.component('plans-component', require('./components/Services/Plans.vue').default);
+//Frequently
+Vue.component('frequently-component', require('./components/Services/Frequently.vue').default);
+
 
 
 //Filtros

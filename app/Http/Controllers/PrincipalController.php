@@ -21,4 +21,8 @@ class PrincipalController extends Controller
     public function blog(){
         return view('public.blog');
     }
+
+    public function contact(){
+        return view('public.contact');
+    }
 }

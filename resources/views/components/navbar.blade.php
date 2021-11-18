@@ -28,10 +28,10 @@ id="main-nav"
         'path': '/blog'
     },
     {
-        'text': 
-        'contact', 
-        'link': '#', 
-        'ref': ''
+        'text': 'contact', 
+        'link': '{{route('contact')}}', 
+        'ref': '',
+        'path': '/contact'
     }
 ]">
 </navbar-component>

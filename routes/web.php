@@ -21,3 +21,5 @@ Route::get('/about-us', [App\Http\Controllers\PrincipalController::class, 'about
 Route::get('/services', [App\Http\Controllers\PrincipalController::class, 'services'])->name('services');
 //Blog
 Route::get('/blog', [App\Http\Controllers\PrincipalController::class, 'blog'])->name('blog');
+//Contact
+Route::get('/contact', [App\Http\Controllers\PrincipalController::class, 'contact'])->name('contact');

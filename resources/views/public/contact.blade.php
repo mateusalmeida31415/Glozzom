@@ -73,4 +73,51 @@
             ]">
         </contact-component>
     </section>
+
+    {{-- Staff Section --}}
+    <section id="staff" class="bg-dark py-5">
+        <staff-component 
+            :staff="[
+                {
+                    'title': 'Our Staff',
+                    'people': [
+                        {
+                            'image': 
+                                {
+                                    'src': 'https://source.unsplash.com/random/200x200?woman',
+                                    'alt': ''
+                                },
+                            'name': 'Jane Doe',
+                            'job': 'Marketing Manager'
+                        },
+                        {
+                            'image': {
+                                'src': 'https://source.unsplash.com/random/201x201?woman',
+                                'alt': ''
+                            },
+                            'name': 'Sara Williams',
+                            'job': 'Business Manager'
+                        },
+                        {
+                            'image': {
+                                'src': 'https://source.unsplash.com/random/202x202?man',
+                                'alt': ''
+                            },
+                            'name': 'John Doe',
+                            'job': 'CEO'
+                        },
+                        {
+                            'image': {
+                                'src': 'https://source.unsplash.com/random/203x203?man',
+                                'alt': ''
+                            },
+                            'name': 'Steve Smith',
+                            'job': 'Marketing Manager'
+                        },
+                        
+                    ]
+                }
+        ]">
+        </staff-component>
+    </section>
 @endsection

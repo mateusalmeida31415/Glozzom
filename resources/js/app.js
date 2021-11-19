@@ -55,6 +55,8 @@ Vue.component('blog-component', require('./components/blog/Blog.vue').default);
 Vue.component('pagination-component', require('./components/blog/Pagination.vue').default);
 //Contact
 Vue.component('contact-component', require('./components/contact/Contact.vue').default);
+//Staff
+Vue.component('staff-component', require('./components/staff/Staff.vue').default);
 
 
 //Filtros

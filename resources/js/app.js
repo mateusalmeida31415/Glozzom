@@ -8,6 +8,22 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
+//VueX
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
+  state: {
+    newsletter: {
+        'msg': '',
+        'status': ''
+    }
+  }
+})
+
+
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -57,6 +73,9 @@ Vue.component('pagination-component', require('./components/blog/Pagination.vue'
 Vue.component('contact-component', require('./components/contact/Contact.vue').default);
 //Staff
 Vue.component('staff-component', require('./components/staff/Staff.vue').default);
+//Alert
+Vue.component('alert-component', require('./components/principal/Alert.vue').default);
+
 
 
 //Filtros
@@ -75,4 +94,5 @@ Vue.filter('getYear', function(){
 
 const app = new Vue({
     el: '#app',
+    store
 });

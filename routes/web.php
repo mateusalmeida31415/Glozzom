@@ -23,3 +23,5 @@ Route::get('/services', [App\Http\Controllers\PrincipalController::class, 'servi
 Route::get('/blog', [App\Http\Controllers\PrincipalController::class, 'blog'])->name('blog');
 //Contact
 Route::get('/contact', [App\Http\Controllers\PrincipalController::class, 'contact'])->name('contact');
+//Newsletter
+// Route::get('/newsletter', [App\Http\Controllers\PrincipalController::class, 'newsletter'])->name('newsletter');

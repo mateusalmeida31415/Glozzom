@@ -3,6 +3,16 @@
 @section('pagina', 'Home')
 
 @section('content')    
+    {{-- Alert --}}
+    <alert-component 
+        :info="
+            {
+                'status': $store.state.newsletter.status,
+                'msg': $store.state.newsletter.msg
+            }
+        ">
+    </alert-component>
+    
     {{-- Showcase --}}
     <header id="showcase">
         <carousel-component
@@ -169,11 +179,13 @@
                     {
                         'type': 'text',
                         'placeholder': 'Enter Name',
+                        'name': 'name',
                         'value': ''
                     }, 
                     {
                         'type': 'email',
                         'placeholder': 'Enter E-mail',
+                        'name': 'email',
                         'value': ''
                     }
                 ]

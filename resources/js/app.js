@@ -8,6 +8,7 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
+import Vue from 'vue';
 //VueX
 import Vuex from 'vuex'
 
@@ -18,7 +19,9 @@ const store = new Vuex.Store({
     newsletter: {
         'msg': '',
         'status': ''
-    }
+    },
+    posts: [],
+    pagination: []
   }
 })
 
@@ -85,6 +88,7 @@ Vue.filter('getYear', function(){
 
     return date.getFullYear();
 });
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

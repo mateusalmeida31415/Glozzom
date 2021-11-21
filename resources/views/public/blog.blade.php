@@ -15,61 +15,13 @@
     {{-- Blog Section --}}
     <section id="blog" class="py-3">
         <blog-component
-            :post="[
-                {
-                    'image': {
-                        'src': 'https://source.unsplash.com/random/300x200?code',
-                        'alt': '',
-                    },
-                    'title': 'Card Title',
-                    'whiter': 'Written by Jeff on 05/20',
-                    'demo': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi, quisquam, dignissimos molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit. Magni vel iusto mollitia exercitationem.',
-                    'btn': {
-                        'title': 'Read More',
-                        'link': '#',
-                    },
-                    'quote': {
-                        'text': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident amet tenetur vel quam atque est?',
-                        'font': 'Someone Famous in Source Title'
-                    }
-                },
-                {
-                    'image': {
-                        'src': 'https://source.unsplash.com/random/301x200?code',
-                        'alt': '',
-                    },
-                    'title': 'Card Title',
-                    'whiter': 'Written by Jeff on 05/20',
-                    'demo': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi, quisquam, dignissimos molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit. Magni vel iusto mollitia exercitationem.',
-                    'btn': {
-                        'title': 'Read More',
-                        'link': '#',
-                    },
-                    'quote': {
-                        'text': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident amet tenetur vel quam atque est?',
-                        'font': 'Someone Famous in Source Title'
-                    }
-                },
-                {
-                    'image': {
-                        'src': 'https://source.unsplash.com/random/300x201?code',
-                        'alt': '',
-                    },
-                    'title': 'Card Title',
-                    'whiter': 'Written by Jeff on 05/20',
-                    'demo': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi, quisquam, dignissimos molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit. Magni vel iusto mollitia exercitationem.',
-                    'btn': {
-                        'title': 'Read More',
-                        'link': '#',
-                    },
-                    'quote': {
-                        'text': 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident amet tenetur vel quam atque est?',
-                        'font': 'Someone Famous in Source Title'
-                    }
-                }
-            ]">
+            :post="$store.state.posts"
+            api="http://glozzom.test/api/posts/"
+            num="1">
         </blog-component>
-        <pagination-component>
+        <pagination-component
+            :pagination="$store.state.pagination"
+            url-base="http://glozzom.test/blog">
         </pagination-component>
     </section>
 @endsection

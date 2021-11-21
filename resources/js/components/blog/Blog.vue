@@ -44,6 +44,53 @@
 <script>
     export default {
         // post: Objeto com propriedades da post section. image.src(Referência da imagem), image.alt(Texto descritivo da imagem), title(Título da postagem), whiter(Nome do escritor e data de postagem), demo(Descrição da postagem), btn.title(Título do botão), btn.link(Link de referência do botão), quote.text(Texto da citação) e quote.font(Fonte da citação) | [{'image': {'src': '', 'alt': ''}, 'title': '', 'whiter': '', 'demo': '', 'btn': {'title' :'', 'link': ''}, 'quote': {'text': '', 'font': ''}}]
-        props: ['post'] 
+        props: ['post', 'num', 'api'], 
+        methods: {
+            loadPosts(){
+                // url da api para busca de dados com a quantidade de registros
+                let url = this.api + this.num
+                
+                // Adiciona um filtro na url da api, fazendo a mudaça dos registros
+                if(window.location.href.split('?')[1]){
+                    url = url + '?' + window.location.href.split('?')[1]
+                }
+
+                //Solicitação de busca dos registros
+                axios.get(url)
+                    .then(response => {
+                        response.data.posts.data.forEach(element => {
+                            let post =  {
+                                'image': {
+                                    'src': element.image, 
+                                    'alt': 'Teste'
+                                }, 
+                                'title': element.title, 
+                                'whiter': element.writer, 
+                                'demo': element.post, 
+                                'btn': {
+                                    'title': 'Read Me', 
+                                    'link': ''
+                                }, 
+                                'quote': {
+                                    'text': element.quote, 
+                                    'font': element.source
+                                }
+                            }
+
+                            this.$store.state.posts.push(post)
+                        })
+
+                        // Dados da paginação
+                        this.$store.state.pagination = response.data.posts.links
+    
+                    })
+                    .catch(erro => {
+                        console.log(erro.response)
+                    })
+            }
+        },
+        mounted(){
+            this.loadPosts()
+        }
     }
 </script>

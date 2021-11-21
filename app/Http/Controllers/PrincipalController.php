@@ -5,6 +5,7 @@ use App\Mail\NewsletterSub;
 use Illuminate\Http\Request;
 
 use App\Models\Newsletter;
+use App\Models\Post;
 
 class PrincipalController extends Controller
 {
@@ -47,5 +48,13 @@ class PrincipalController extends Controller
         
         //Mensagem de sucesso caso todo o processo ocorra sem erros
         return response()->json(['msg' => 'Agora você está cadastrado na nossa Newsletter!'], 200);
+    }
+
+    public function posts($itens = 3){
+        // Traz os elementos do banco de dados, juntos com um objeto de páginação
+        $posts = Post::paginate($itens);
+
+        // Retorna a respota para o axios
+        return response()->json(['posts' => $posts], 200);
     }
 }

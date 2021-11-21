@@ -18,4 +18,8 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+//Cadastro na newsletter
 Route::post('/newsletter', [App\Http\Controllers\PrincipalController::class, 'newsletter'])->name('newsletter');
+
+//Recupera os post da blog section
+Route::get('/posts/{itens?}', [App\Http\Controllers\PrincipalController::class, 'posts'])->name('posts');
